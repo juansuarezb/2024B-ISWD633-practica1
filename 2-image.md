@@ -4,7 +4,9 @@ Es un archivo único que contiene todos los programas, librerías, dependencias 
 
 
 ## ¿Cuál es la relación entre una imagen y un contenedor? 
-# COMPLETAR 
+Una imagen es la plantilla que describe el contenedor.
+Un contenedor es una instancia viva de una imagen.
+Se pueden crear múltiples contenedores a partir de una misma imagen, cada uno ejecutándose de forma independiente.
 
 ![Imagen y contenedores](img/imagenContenedores.JPG)
 ## Comandos para imágenes
