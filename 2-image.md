@@ -4,9 +4,15 @@ Es un archivo único que contiene todos los programas, librerías, dependencias 
 
 
 ## ¿Cuál es la relación entre una imagen y un contenedor? 
-Una imagen es la plantilla que describe el contenedor.
-Un contenedor es una instancia viva de una imagen.
-Se pueden crear múltiples contenedores a partir de una misma imagen, cada uno ejecutándose de forma independiente.
+<p>En Docker, las imágenes y los contenedores son conceptos fundamentales. A continuación, se explica cómo se relacionan:</p>
+
+<ul>
+  <li>Una imagen es la plantilla que describe el contenedor, con todo lo necesario para ejecutar una aplicación.</li>
+  <li>Un contenedor es una instancia activa de una imagen, funcionando como una aplicación aislada.</li>
+  <li>Se pueden crear múltiples contenedores a partir de una misma imagen, cada uno ejecutándose de forma independiente y aislada.</li>
+</ul>
+
+<p>Por ejemplo, a partir de una imagen de <code>nginx</code>, se pueden crear múltiples contenedores, cada uno funcionando de forma separada como un servidor web.</p>
 
 ![Imagen y contenedores](img/imagenContenedores.JPG)
 ## Comandos para imágenes
