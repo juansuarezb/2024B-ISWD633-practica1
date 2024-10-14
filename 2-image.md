@@ -32,7 +32,7 @@ docker pull <nombre imagen>:<tag>
 ```
 
 Descargar la imagen **hello-world**
-# COMPLETAR
+![Imagen](img/helloWorld.png)
 
 **¿Qué es nginx**
 Es un servidor web que se utiliza ampliamente para servir sitios web y aplicaciones.
