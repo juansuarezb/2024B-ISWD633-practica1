@@ -31,8 +31,8 @@ Una imagen puede tener la etiqueta latest para representar la última versión, 
 docker pull <nombre imagen>:<tag>
 ```
 
-Descargar la imagen **hello-world**
-![Imagen](img/helloWorld.png)
+Descargar la imagen **hello-world** <br>
+![Imagen](img/helloWorld.png) <br>
 
 **¿Qué es nginx**
 Es un servidor web que se utiliza ampliamente para servir sitios web y aplicaciones.
@@ -45,8 +45,8 @@ Alpine Linux es una distribución muy ligera de Linux, utilizada para minimizar 
 La imagen nginx:alpine es una versión optimizada y más pequeña de Nginx, perfecta para contenedores que necesitan eficiencia y rapidez sin agregar peso innecesario.
 
 
-Descargar la imagen  **nginx** en la versión **alpine**
-# COMPLETAR
+Descargar la imagen  **nginx** en la versión **alpine** <br>
+![Imagen](img/nginx.png) <br>
 
 ### Listar imágenes
 
@@ -54,8 +54,7 @@ Descargar la imagen  **nginx** en la versión **alpine**
 docker images
 ```
 
-# COLOCAR UNA CAPTURA DE PANTALLA DEL RESULTADO 
-
+![Imagen](img/dockerImages.png) <br>
 **Identificadores**
 
 En Docker, se utilizan varios identificadores para diferenciar de manera única los elementos del sistema, como imágenes, contenedores, volúmenes y redes. Estos identificadores son generados automáticamente por Docker y son únicos dentro del contexto del sistema Docker en el que se encuentran. 
@@ -68,8 +67,10 @@ docker inspect <nombre imagen>
 docker inspect <nombre imagen>:<tag>
 ```
 
-Inspeccionar la imagen hello-world 
-# COMPLETAR
+Inspeccionar la imagen hello-world <br>
+![Imagen](img/inspectHelloWorld1.png) <br>
+![Imagen](img/inspectHelloWorld2.png) <br>
+
 
 **¿Con qué algoritmo se está generando el ID de la imagen**
 El ID de una imagen de Docker se genera utilizando un algoritmo de hashing criptográfico. Específicamente, Docker usa el algoritmo SHA-256 (Secure Hash Algorithm 256 bits).
@@ -90,8 +91,9 @@ Eliminar permanentemente la imagen de tu sistema Docker.
 docker rmi <nombre imagen>:<tag>
 ```
 
-Eliminar la imagen hello-world 
-# COMPLETAR
+Eliminar la imagen hello-world <br>
+![Imagen](img/removeHelloWorld.png) <br>
+
 
 -f: Es la opción para forzar la eliminación de la imagen incluso si hay contenedores en ejecución que utilizan esa imagen.
 Cuando eliminas una imagen Docker, Docker no elimina automáticamente los contenedores que se han creado a partir de esa imagen. Esto significa que, aunque hayas eliminado la imagen, el contenedor seguirá ejecutándose normalmente.  
