@@ -35,7 +35,15 @@ Descargar la imagen **hello-world**
 # COMPLETAR
 
 **¿Qué es nginx**
-# COMPLETAR 
+Es un servidor web que se utiliza ampliamente para servir sitios web y aplicaciones.
+
+**¿Para qué sirve Nginx?**
+Se utiliza para entregar contenido estático como HTML, CSS, JavaScript e imágenes a los usuarios entre otras cosas.
+
+**¿Qué es la versión Alpine de Nginx?**
+Alpine Linux es una distribución muy ligera de Linux, utilizada para minimizar el tamaño de las imágenes de Docker.
+La imagen nginx:alpine es una versión optimizada y más pequeña de Nginx, perfecta para contenedores que necesitan eficiencia y rapidez sin agregar peso innecesario.
+
 
 Descargar la imagen  **nginx** en la versión **alpine**
 # COMPLETAR
