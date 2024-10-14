@@ -7,7 +7,15 @@ Para crear un nuevo contenedor Docker a partir de una imagen específica, pero s
 docker create --name <nombre contenedor> <nombre imagen>:<tag>
 ```
 Crear el contenedor  **srv-web** usando la imagen nginx version alpine
-# COMPLETAR
+
+
+**Descripción del comando:**<br>
+docker run: Inicia un contenedor.<br>
+--name srv-web: Asigna el nombre srv-web al contenedor.<br>
+-d: Ejecuta el contenedor en modo detached (en segundo plano).<br>
+-p 8080:80: Mapea el puerto 80 del contenedor al puerto 8080 de tu máquina (para acceder desde tu navegador en localhost:8080).<br>
+nginx:alpine: Especifica que usas la imagen nginx en su versión alpine.<br>
+
 
 Si creas un contenedor en Docker sin asignarle un nombre específico utilizando la opción --name, Docker asignará automáticamente un nombre aleatorio al contenedor. Este nombre suele consistir en una combinación de palabras y números.  
 
@@ -51,7 +59,14 @@ Crear y ejecutar inmediatamente el contenedor **srv-web2** usando la imagen ngin
 # COMPLETAR
 
 **¿Qué sucede luego de la ejecución del comando?**
-# COMPLETAR  
+1. Creación del Contenedor: <br>
+Docker crea un nuevo contenedor a partir de la imagen nginx:alpine si no existe previamente. <br>
+El contenedor se basa en la última versión de la imagen descargada. <br>
+Asignación de Puertos: <br>
+El puerto 80 del contenedor se mapea al puerto 8081 de tu máquina local. Esto permite que accedas al servidor web Nginx ejecutándose en el contenedor a través de http://localhost:8081. <br>
+Si todo funciona correctamente, al abrir un navegador y dirigirte a http://localhost:8081, deberías ver la página de bienvenida de Nginx, confirmando que el servidor web está activo y sirviendo contenido.
+
+
 
 Cuando ejecutas un contenedor en primer plano sin la opción -d (modo detach), el contenedor captura la entrada estándar (stdin) del terminal, lo que significa que el terminal queda "atrapado" y no puedes introducir más comandos hasta que detengas el contenedor.
 
