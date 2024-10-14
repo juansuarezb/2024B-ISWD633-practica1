@@ -19,8 +19,8 @@ nginx:alpine: Especifica que usas la imagen nginx en su versión alpine.<br>
 
 Si creas un contenedor en Docker sin asignarle un nombre específico utilizando la opción --name, Docker asignará automáticamente un nombre aleatorio al contenedor. Este nombre suele consistir en una combinación de palabras y números.  
 
-Crear el contenedor usando la imagen hello-world
-# COMPLETAR
+Crear el contenedor usando la imagen hello-world <br>
+(img/contenedorHelloWorld.png) <br>
 
 ### Listar los contenedores ejecutándose o no
 
@@ -33,8 +33,8 @@ docker ps -a
 ```
 docker start <nombre contenedor o identificador>
 ```
-Iniciar el contenedor srv-web 
-# COMPLETAR
+Iniciar el contenedor srv-web <br>
+(img/contenedorSrvWeb.png) <br>
 
 ### Listar los contenedores ejecutándose
 ```
@@ -55,8 +55,8 @@ docker run --name <nombre contenedor> <nombre imagen>:<tag>
 ```
 ![Ecosistema de Docker](img/dockerRun.PNG)
 
-Crear y ejecutar inmediatamente el contenedor **srv-web2** usando la imagen nginx:alpine
-# COMPLETAR
+Crear y ejecutar inmediatamente el contenedor **srv-web2** usando la imagen nginx:alpine <br>
+(img/ContenedorSrvWeb2ImagenNginx.png) <br>
 
 **¿Qué sucede luego de la ejecución del comando?**
 1. Creación del Contenedor: <br>
@@ -77,32 +77,30 @@ Cuando un contenedor se ejecuta en segundo plano, Docker devuelve el control al 
 ```
 docker run -d --name <nombre contenedor> <nombre imagen>:tag
 ```
-Crear y ejecutar inmediatamente el contenedor **srv-web3** en modo detach usando la imagen nginx:alpine
-# COMPLETAR
+Crear y ejecutar inmediatamente el contenedor **srv-web3** en modo detach usando la imagen nginx:alpine <br>
+(img/ContenedorSrvweb3Detach.png) <br>
 
 ### Para eliminar un contenedor
 
 ```
 docker rm <nombre contenedor>
 ```
-Eliminar el contenedor que se creó a partir de la imagen hello-world 
-# COMPLETAR
+Eliminar el contenedor que se creó a partir de la imagen hello-world <br>
+(img/EliminarContenedorHelloWorld.png) <br>
 
-Verificar que el contenedor que se eliminó
-# COMPLETAR
 
 ### Para eliminar un contenedor que esté ejecutándose
 
 ```
 docker rm -f <nombre contenedor>
 ```
-Eliminar el contenedor **srv-web3** 
-# COMPLETAR
+Eliminar el contenedor **srv-web3** <br>
+(img/EliminarContenedorSrvWeb3.png) <br>
 
-Verificar que el contenedor que se eliminó
-# COMPLETAR
+Verificar que el contenedor que se eliminó <br>
+(img/VerificarEliminacionContenedorsrv-web3.png) <br>
 
 ### Para inspecionar un contenedor 
 
-Inspeccionar el contenedor **srv-web** 
-# COMPLETAR
+Inspeccionar el contenedor **srv-web** <br>
+(img/InspeccionarContenedorSrv-web.png)
