@@ -72,7 +72,9 @@ Inspeccionar la imagen hello-world
 # COMPLETAR
 
 **¿Con qué algoritmo se está generando el ID de la imagen**
-# COMPLETAR
+El ID de una imagen de Docker se genera utilizando un algoritmo de hashing criptográfico. Específicamente, Docker usa el algoritmo SHA-256 (Secure Hash Algorithm 256 bits).
+
+Al realizar docker inspect hello-world, el campo Id mostrará el identificador único basado en SHA-256
 
 ### Filtrar imágenes
 
